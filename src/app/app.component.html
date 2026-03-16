@@ -1,19 +1,5 @@
-<style>
-  
-</style>
-
 <main class="main mat-typography">
-  <mat-toolbar class="header">
-    <h1 class="mat-h1-color h1">Good Hosster</h1>
-    <mat-form-field>
-      <mat-label>Praça/Setor</mat-label>
-      <mat-select [(ngModel)]="selectedValue">
-        <mat-option *ngFor="let option of options" [value]="option.value">
-          {{ option.viewValue }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </mat-toolbar>
+  <app-header></app-header>
   <div cdkDropList class="d-flex flex-column justify-content-center align-items-center">
     <h1 class="mat-h1-color h1">Trattoria 1</h1>
     <div class="d-flex flex-row ">

@@ -1,0 +1,11 @@
+<mat-toolbar class="header">
+    <h1 class="mat-h1-color h1">Good Hosster</h1>
+    <mat-form-field>
+      <mat-label>Praça/Setor</mat-label>
+      <mat-select [(ngModel)]="selectedValue">
+        <mat-option *ngFor="let option of options" [value]="option.value">
+          {{ option.viewValue }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar>
