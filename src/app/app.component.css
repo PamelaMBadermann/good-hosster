@@ -4,7 +4,3 @@
     color: var(--mat-sys-on-surface-variant);
     height: 100vh;
 }
-
-.mat-h1-color {
-    color: var(--mat-sys-on-primary-container);
-}
