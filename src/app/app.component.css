@@ -1,6 +1,7 @@
 .main {
     font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
     background: var(--mat-sys-background);
+    color: var(--mat-sys-on-surface-variant);
     height: 100vh;
 }
 
@@ -11,11 +12,6 @@
     background: var(--mat-sys-primary-container);
 }
 
-.mat-h1 {
+.mat-h1-color {
     color: var(--mat-sys-on-primary-container);
-}
-
-.mat-card-table {
-    height: 100px;
-    width: 150px;
 }

@@ -24,6 +24,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     MatOptionModule,
     MatCardModule,
     DragDropModule
+    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
