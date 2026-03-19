@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
-import { MatCardModule } from '@angular/material/card';
+import { TableComponent } from '../table/table.component';
+
 
 @Component({
   selector: 'app-floor-plan',
   imports: [
-    MatCardModule,
+    TableComponent
   ],
   templateUrl: './floor-plan.component.html',
   styleUrl: './floor-plan.component.css'
