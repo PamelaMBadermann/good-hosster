@@ -1,3 +1,20 @@
-.mat-h1-color {
-    color: var(--mat-sys-on-primary-container);
+.mat-mdc-card-content:first-child {
+    padding-top: 6px;
+}
+
+.table-card {
+    background-color: var(--mat-sys-primary-container);
+    color: var(--mat-sys-on-surface-variant);
+}
+
+.vertical {
+    width: 150px;
+    height: 200px;
+    margin: 0 25px 0 25px;
+}
+
+.horizontal {
+    width: 200px;
+    height: 150px;
+    margin: 25px 0 25px 0;
 }
