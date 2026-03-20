@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -7,9 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 
-import floorPlanPattern from '../../shared/assets/floor-plan-pattern.json';
-import { Section } from '../../shared/models/section.model';
-
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -25,6 +23,8 @@ import { Section } from '../../shared/models/section.model';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-selectedValue!: Section;
-  sections = signal(floorPlanPattern.floorPlanPattern);
+  private dataService = inject(DataService);
+
+  sections = this.dataService.sections;
+  selectedSection = this.dataService.selectedSection;
 }
