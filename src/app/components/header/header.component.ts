@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -6,6 +6,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
+
+import floorPlanPattern from '../../shared/assets/floor-plan-pattern.json';
+import { Section } from '../../shared/models/section.model';
+
 
 @Component({
   selector: 'app-header',
@@ -21,12 +25,6 @@ import { MatOptionModule } from '@angular/material/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-selectedValue!: string;
-  options = [
-    {value: 'Trattoria 1', viewValue: 'Trattoria 1'},
-    {value: 'Trattoria 2', viewValue: 'Trattoria 2'},
-    {value: 'Trattoria 3', viewValue: 'Trattoria 3'},
-    {value: 'Pergolado', viewValue: 'Pergolado'},
-    {value: 'Santinha', viewValue: 'Santinha'},
-  ];
+selectedValue!: Section;
+  sections = signal(floorPlanPattern.floorPlanPattern);
 }
