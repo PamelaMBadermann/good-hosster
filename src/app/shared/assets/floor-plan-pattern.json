@@ -1,7 +1,7 @@
 {
     "floorPlanPattern": [
         {
-            "section": 1,
+            "id": 1,
             "name": "Trattoria 1",
             "setOfTables": [
                 {
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "section": 2,
+            "id": 2,
             "name": "Trattoria 2",
             "setOfTables": [
                 {
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "section": 3,
+            "id": 3,
             "name": "Trattoria 3",
             "setOfTables": [
                 {
@@ -215,7 +215,7 @@
             ]
         },
         {
-            "section": 4,
+            "id": 4,
             "name": "Pergolado 1",
             "setOfTables": [
                 {
@@ -263,7 +263,7 @@
             ]
         },
         {
-            "section": 5,
+            "id": 5,
             "name": "Pergolado 2",
             "setOfTables": [
                 {
@@ -333,7 +333,7 @@
         },
         {
             
-            "section": 6,
+            "id": 6,
             "name": "Santinha 1",
             "setOfTables": [
                 {
@@ -375,7 +375,7 @@
         },
         {
             
-            "section": 7,
+            "id": 7,
             "name": "Santinha 1",
             "setOfTables": [
                 {
