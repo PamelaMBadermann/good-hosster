@@ -16,4 +16,10 @@ import { FloorPlanComponent } from './components/floor-plan/floor-plan.component
 })
 export class AppComponent {
   title = 'good-hosster';
+
+  selectedFilter: string = '';
+
+  onFilterChange(value: string) {
+    this.selectedFilter = value;
+  }
 }

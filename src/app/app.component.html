@@ -1,6 +1,6 @@
 <main class="main mat-typography">
-  <app-header></app-header>
-  <app-floor-plan></app-floor-plan>
+  <app-header (filterChange)="onFilterChange($event)"></app-header>
+  <app-floor-plan [filter]="selectedFilter"></app-floor-plan>
 </main>
 
 <router-outlet />

@@ -1,4 +1,4 @@
-import { Component, inject} from '@angular/core';
+import { Component, EventEmitter, inject, Output} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
@@ -27,4 +27,10 @@ export class HeaderComponent {
 
   sections = this.dataService.sections;
   selectedSection = this.dataService.selectedSection;
+
+  @Output() filterChange = new EventEmitter<string>();
+
+  onSelectionChange(value: string) {
+    this.filterChange.emit(value);
+  }
 }

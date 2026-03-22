@@ -1,12 +1,15 @@
 <div cdkDropList class="d-flex flex-column justify-content-center align-items-center">
-    <div class="d-flex flex-row ">
+  @for (section of filteredSections(); track section.id) {
+    <div>{{section.name}}</div>
+  }
+  <div class="d-flex flex-row">
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
     </div>
-    <div class="d-flex flex-row ">
+    <div class="d-flex flex-row">
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
       <app-table cdkDrag></app-table>
