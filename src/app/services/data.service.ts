@@ -1,17 +1,51 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, effect, inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 import { Section } from '../shared/models/section.model';
-
-import sections from '../shared/assets/floor-plan-pattern.json';
+import sections from '../assets/floor-plan-pattern.json';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-    private sectionsSignal = signal<Array<Section>>(sections.floorPlanPattern);
-    private selectedSectionSignal = signal<Section | null>(null);
+  private STORAGE_KEY = "floor-plan";
+  private platformId = inject(PLATFORM_ID);
+  private isBrowser = isPlatformBrowser(this.platformId);
 
-    sections = this.sectionsSignal.asReadonly();
-    selectedSection = this.selectedSectionSignal.asReadonly();
+  private sectionsSignal = signal<Array<Section>>(this.loadInitialData());
+
+  sections = this.sectionsSignal.asReadonly();
+
+  constructor() {
+    if (this.isBrowser) {
+      this.persistSections();
+    }
+  }
+
+  private loadInitialData(): Array<Section> {
+    if (this.isBrowser) {
+      const stored = localStorage.getItem(this.STORAGE_KEY);
+
+      if (stored) {
+        console.log("Dados carregados no localStorage.");
+        return JSON.parse(stored);
+      }
+
+      localStorage.setItem(
+        this.STORAGE_KEY,
+        JSON.stringify(sections.floorPlanPattern)
+      );
+    }
+
+    console.log("Usando JSON inicial.")
+    return sections.floorPlanPattern;
+  }
+
+  private persistSections() {
+    effect(() => {
+      const current = this.sectionsSignal();
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(current));
+    });
+  }
 }
