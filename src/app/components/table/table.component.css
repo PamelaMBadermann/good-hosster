@@ -3,9 +3,15 @@
 }
 
 .table-card {
-    /* background-color: var(--mat-sys-inverse-on-surface); ocupado */
-    background-color: var(--mat-sys-primary-container); /* disponivel */
     color: var(--mat-sys-on-surface-variant);
+}
+
+.available {
+    background-color: var(--mat-sys-primary-container);
+}
+
+.busy {
+    background-color: var(--mat-sys-inverse-on-surface);
 }
 
 .vertical {

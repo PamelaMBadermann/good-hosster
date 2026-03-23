@@ -26,7 +26,6 @@ export class HeaderComponent {
   private dataService = inject(DataService);
 
   sections = this.dataService.sections;
-  selectedSection = this.dataService.selectedSection;
 
   @Output() filterChange = new EventEmitter<string>();
 

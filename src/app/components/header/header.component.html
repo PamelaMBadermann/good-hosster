@@ -2,7 +2,7 @@
     <h1 class="h1-color h1 fw-bold">Good Hosster</h1>
     <mat-form-field>
       <mat-label>Praça/Setor</mat-label>
-      <mat-select [(ngModel)]="selectedSection" (selectionChange)="onSelectionChange($event.value)">
+      <mat-select (selectionChange)="onSelectionChange($event.value)">
         <mat-option *ngFor="let section of sections()" [value]="section.name">
           {{ section.name }}
         </mat-option>

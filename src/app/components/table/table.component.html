@@ -1,6 +1,6 @@
-<mat-card appearance="raised" class="table-card horizontal justify-content-center align-items-center">
-    <mat-card-content class="h5 fw-bold">Mesa 1</mat-card-content>
-    <mat-card-content>4 pax</mat-card-content>
+<mat-card appearance="raised" [ngClass]="table.available === true ? 'available' : 'busy'" class="table-card horizontal justify-content-center align-items-center">
+    <mat-card-content class="h5 fw-bold">Mesa {{table.id}}</mat-card-content>
+    <mat-card-content>{{table.pax}} pax</mat-card-content>
     <button mat-raised-button class="w-50 m-1">Virar</button>
     <button mat-flat-button class="w-50 m-1">Ocupar</button>   
 </mat-card>
