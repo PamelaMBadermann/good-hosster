@@ -1,4 +1,6 @@
-<div cdkDropList class="d-flex flex-column justify-content-center align-items-center">
+<div cdkDropList 
+  [cdkDropListData]="tables()"
+  (cdkDropListDropped)="drop($event)" class="d-flex flex-column justify-content-center align-items-center">
   <div class="d-flex flex-row">
     @for (table of tables(); track table.id) {
       <app-table [table]="table" cdkDrag></app-table>

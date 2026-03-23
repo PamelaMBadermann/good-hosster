@@ -1,6 +1,7 @@
 import { Component, EventEmitter, inject, Input, Output, signal } from '@angular/core';
 
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DragDropModule, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+
 
 import { TableComponent } from '../table/table.component';
 import { DataService } from '../../services/data.service';
@@ -40,5 +41,32 @@ export class FloorPlanComponent {
     ));
 
     this.tables.set(this.filteredSection()[0].setOfTables);
+  }
+
+  drop(event: CdkDragDrop<Table[]>) {
+    const updatedTables = [...event.container.data];
+
+    moveItemInArray(
+      updatedTables,
+      event.previousIndex,
+      event.currentIndex
+    );
+
+    this.tables.set(updatedTables);
+
+    const currentSections = [...this.sections()];
+
+    const sectionIndex = currentSections.findIndex(
+      s => s.name === this.filter
+    );
+
+    if (sectionIndex !== -1) {
+      currentSections[sectionIndex] = {
+        ...currentSections[sectionIndex],
+        setOfTables: updatedTables
+      };
+
+      this.dataService.updateSections(currentSections);
+    }
   }
 }

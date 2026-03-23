@@ -48,4 +48,8 @@ export class DataService {
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(current));
     });
   }
+
+  updateSections(newSections: Array<Section>) {
+    this.sectionsSignal.set(newSections);
+  }
 }
