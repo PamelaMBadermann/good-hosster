@@ -3,5 +3,7 @@ export interface Table {
     pax: number;
     direction: string;
     available: boolean;
-    order: number;
+    rowOfTables: string;
+    sectionDivisor: number;
+    order: number
 }
