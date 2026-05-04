@@ -15,7 +15,7 @@ import { FloorPlanComponent } from './components/floor-plan/floor-plan.component
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'good-hosster';
+  title = 'good-host';
 
   selectedFilter: string = '';
 
