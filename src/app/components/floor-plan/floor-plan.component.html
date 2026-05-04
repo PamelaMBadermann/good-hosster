@@ -1,9 +1,27 @@
-<div cdkDropList 
-  [cdkDropListData]="tables()"
-  (cdkDropListDropped)="drop($event)" class="d-flex flex-column justify-content-center align-items-center">
-  <div class="d-flex flex-row">
-    @for (table of tables(); track table.id) {
-      <app-table [table]="table" cdkDrag></app-table>
-    }
-  </div>
+<div class="d-flex flex-column gap-3">
+  @if (filteredSection(); as section) {
+    <div class="d-flex flex-column gap-4">
+      @for (sectionItem of section; track sectionItem.id) {
+        @for (divisor of sectionItem.divisors; track divisor.id) {
+          <div class="border border-success p-2 rounded">
+            @for (row of divisor.rows; track row.id) {
+              <div
+                cdkDropList
+                [cdkDropListData]="row.tables"
+                (cdkDropListDropped)="drop($event)"
+                class="d-flex flex-row gap-2 mb-2 border border-light rounded p-2"
+              >
+                @for (table of row.tables; track table.id) {
+                  <app-table
+                    [table]="table"
+                    cdkDrag
+                  ></app-table>
+                }
+              </div>
+            }
+          </div>
+        }
+      }
+    </div>
+  }
 </div>

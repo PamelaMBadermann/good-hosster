@@ -1,7 +1,5 @@
-import { Component, EventEmitter, inject, Input, Output, signal } from '@angular/core';
-
-import { DragDropModule, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-
+import { Component, inject, Input, signal } from '@angular/core';
+import { DragDropModule, CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 import { TableComponent } from '../table/table.component';
 import { DataService } from '../../services/data.service';
@@ -18,12 +16,13 @@ import { Table } from '../../shared/models/table.model';
   styleUrl: './floor-plan.component.css'
 })
 export class FloorPlanComponent {
+
   private dataService = inject(DataService);
-  
+
   sections = this.dataService.sections;
+
   filteredSection = signal<Section[]>([]);
-  tables = signal<Table[]>([]);
-  
+
   @Input() filter!: string;
 
   ngOnChanges() {
@@ -39,34 +38,25 @@ export class FloorPlanComponent {
     this.filteredSection.set(this.sections().filter(
       section => section.name === this.filter
     ));
-
-    this.tables.set(this.filteredSection()[0].setOfTables);
   }
 
   drop(event: CdkDragDrop<Table[]>) {
-    const updatedTables = [...event.container.data];
 
-    moveItemInArray(
-      updatedTables,
-      event.previousIndex,
-      event.currentIndex
-    );
-
-    this.tables.set(updatedTables);
-
-    const currentSections = [...this.sections()];
-
-    const sectionIndex = currentSections.findIndex(
-      s => s.name === this.filter
-    );
-
-    if (sectionIndex !== -1) {
-      currentSections[sectionIndex] = {
-        ...currentSections[sectionIndex],
-        setOfTables: updatedTables
-      };
-
-      this.dataService.updateSections(currentSections);
+    if (event.previousContainer === event.container) {
+      moveItemInArray(
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    } else {
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
     }
+
+    this.dataService.updateSections([...this.sections()]);
   }
 }
