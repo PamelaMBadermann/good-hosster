@@ -2,581 +2,490 @@
     "floorPlanPattern": [
         {
             "id": 1,
-            "name": "Trattoria 1",
-            "setOfTables": [         
+            "name": "Trattoria",
+            "divisors": [
                 {
-                    "id": 25,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 3,
-                    "order": 18
-                },
-                {
-                    "id": 26,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 3,
-                    "order": 19
-                },
-                {
-                    "id": 27,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 3,
-                    "order": 20
-                },
-                {
-                    "id": 28,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 3,
-                    "order": 21
-                },
-                {
-                    "id": 29,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 3,
-                    "order": 22
-                },
-                {
-                    "id": 24,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 3,
-                    "order": 23
-                },
-                {
-                    "id": 23,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 3,
-                    "order": 24
-                },
-                {
-                    "id": 22,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 3,
-                    "order": 25
-                },
-                {
-                    "id": 21,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 3,
-                    "order": 26
-                },
-                {
-                    "id": 20,
-                    "pax": 6,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 3,
-                    "order": 27
-                },
-                {
-                    "id": 19,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 8
-                },
-                {
-                    "id": 18,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 9
-                },
-                {
-                    "id": 17,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 10
-                },
-                {
-                    "id": 16,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 11
-                },
-                {
-                    "id": 15,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 12
-                },
-                {
-                    "id": 1,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 13
+                    "id": 3,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 25,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 26,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 27,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 28,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 29,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 24,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 23,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 22,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 21,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 20,
+                                    "pax": 6,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 14
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 19,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 18,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 17,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 16,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 15,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 1,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 2,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 3,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 4,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 5,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "id": 3,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 15
-                },
-                {
-                    "id": 4,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 16
-                },
-                {
-                    "id": 5,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 17
-                },
-                {
-                    "id": 6,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 0
-                },
-                {
-                    "id": 14,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 1
-                },
-                {
-                    "id": 7,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 1,
-                    "order": 2
-                },
-                {
-                    "id": 12,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 1,
-                    "order": 3
-                },
-                {
-                    "id": 8,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 1,
-                    "order": 4
-                },
-                {
-                    "id": 11,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 1,    
-                    "order": 5
-                },
-                {
-                    "id": 9,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "fourthList",
-                    "sectionDivisor": 1,    
-                    "order": 6
-                },
-                {
-                    "id": 10,
-                    "pax": 2,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "fourthList",
-                    "sectionDivisor": 1,    
-                    "order": 7
+                    "id": 1,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 6,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 14,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 7,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 12,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "tables": [
+                                {
+                                    "id": 8,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 11,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "tables": [
+                                {
+                                    "id": 9,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 10,
+                                    "pax": 2,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": 2,
-            "name": "Trattoria 2",
-            "setOfTables": [
-                
+            "name": "Pergolado",
+            "divisors": [
+                {
+                    "id": 1,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 44,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 43,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 42,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 30,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 31,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 32,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 41,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 40,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 39,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 33,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 34,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 35,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 36,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                },
+                                {
+                                    "id": 37,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal"
+                                },
+                                {
+                                    "id": 38,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "horizontal" 
+                                }
+                            ]
+                        }
+                    ]
+                }
             ]
         },
         {
+            
             "id": 3,
-            "name": "Trattoria 3",
-            "setOfTables": [
-                
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Pergolado 1",
-            "setOfTables": [
+            "name": "Santinha",
+            "divisors": [
                 {
-                    "id": 44,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 0
+                    "id": 2,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 60,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 59,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 58,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "tables": [
+                                {
+                                    "id": 54,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 55,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 56,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 57,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "tables": [
+                                {
+                                    "id": 53,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 52,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 51,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 50,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical" 
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "id": 43,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 1
-                },
-                {
-                    "id": 42,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 2
-                },
-                {
-                    "id": 30,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 1,
-                    "order": 3
-                },
-                {
-                    "id": 31,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 1,
-                    "order": 4
-                },
-                {
-                    "id": 32,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 1,
-                    "order": 5
-                },
-                {
-                    "id": 41,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 6
-                },
-                {
-                    "id": 40,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 7
-                },
-                {
-                    "id": 39,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 8
-                },
-                {
-                    "id": 33,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 9
-                },
-                {
-                    "id": 34,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 10
-                },
-                {
-                    "id": 35,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 11
-                },
-                {
-                    "id": 36,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 12
-                },
-                {
-                    "id": 37,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 13
-                },
-                {
-                    "id": 38,
-                    "pax": 4,
-                    "direction": "horizontal", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 14
+                    "id": 1,
+                    "rows": [
+                        {
+                            "id": 1,
+                            "tables": [
+                                {
+                                    "id": 45,
+                                    "pax": 4,
+                                    "available": false,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 46,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 47,
+                                    "pax": 4,
+                                    "available": false,
+                                    "direction": "vertical" 
+                                },
+                                {
+                                    "id": 48,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                },
+                                {
+                                    "id": 49,
+                                    "pax": 4,
+                                    "available": true,
+                                    "direction": "vertical"
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Pergolado 2",
-            "setOfTables": [
-                
-            ]
-        },
-        {
-            
-            "id": 6,
-            "name": "Santinha 1",
-            "setOfTables": [
-                {
-                    "id": 60,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 0
-                },
-                {
-                    "id": 59,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 2
-                },
-                {
-                    "id": 58,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 2,
-                    "order": 3
-                },
-                {
-                    "id": 54,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 4
-                },
-                {
-                    "id": 55,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 5
-                },
-                {
-                    "id": 56,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 6
-                },
-                {
-                    "id": 57,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "secondList",
-                    "sectionDivisor": 2,
-                    "order": 7
-                },
-                {
-                    "id": 53,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 2,
-                    "order": 8
-                },
-                {
-                    "id": 52,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 2,
-                    "order": 9
-                },
-                {
-                    "id": 51,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 2,
-                    "order": 10
-                },
-                {
-                    "id": 50,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "thirdList",
-                    "sectionDivisor": 2,
-                    "order": 11
-                },
-                {
-                    "id": 45,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": false,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 12
-                },
-                {
-                    "id": 46,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 13
-                },
-                {
-                    "id": 47,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": false,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 14
-                },
-                {
-                    "id": 48,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 15
-                },
-                {
-                    "id": 49,
-                    "pax": 4,
-                    "direction": "vertical", 
-                    "available": true,
-                    "rowOfTables": "firstList",
-                    "sectionDivisor": 1,
-                    "order": 16
-                }
-            ]
-        },
-        {
-            
-            "id": 7,
-            "name": "Santinha 2",
-            "setOfTables": [
-                
             ]
         }
     ]
