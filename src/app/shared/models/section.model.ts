@@ -1,7 +1,7 @@
-import { Table } from "./table.model";
+import { SectionDivisor } from "./section-divisor.model";
 
 export interface Section {
   id: number;
   name: string;
-  setOfTables: Array<Table>;
+  divisors: Array<SectionDivisor>;
 }
