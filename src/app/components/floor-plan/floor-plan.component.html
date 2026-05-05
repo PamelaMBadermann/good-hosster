@@ -3,13 +3,13 @@
     <div class="d-flex flex-column gap-4">
       @for (sectionItem of section; track sectionItem.id) {
         @for (divisor of sectionItem.divisors; track divisor.id) {
-          <div class="border border-success p-2 rounded">
+          <div class="border border-light p-2 rounded">
             @for (row of divisor.rows; track row.id) {
               <div
                 cdkDropList
                 [cdkDropListData]="row.tables"
                 (cdkDropListDropped)="drop($event)"
-                class="d-flex flex-row gap-2 mb-2 border border-light rounded p-2"
+                class="d-flex flex-row gap-2 mb-1 p-1"
               >
                 @for (table of row.tables; track table.id) {
                   <app-table

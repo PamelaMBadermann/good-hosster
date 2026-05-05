@@ -1,4 +1,4 @@
-import { Injectable, signal, effect, inject, PLATFORM_ID } from '@angular/core';
+import { Injectable, signal, effect, inject, PLATFORM_ID, computed } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 import { Section } from '../shared/models/section.model';
@@ -14,8 +14,11 @@ export class DataService {
   private isBrowser = isPlatformBrowser(this.platformId);
 
   private sectionsSignal = signal<Array<Section>>(this.loadInitialData());
+  
+  selectedSectionName = signal<string | null>(null);
 
   sections = this.sectionsSignal.asReadonly();
+
 
   constructor() {
     if (this.isBrowser) {
@@ -52,4 +55,20 @@ export class DataService {
   updateSections(newSections: Array<Section>) {
     this.sectionsSignal.set(newSections);
   }
+
+  availableTablesCount = computed(() => {
+    const selected = this.selectedSectionName();
+
+    const sectionsToCount = selected
+      ? this.sections().filter(s => s.name === selected)
+      : this.sections(); // 👈 total geral quando null
+
+    return sectionsToCount.reduce((total, section) => {
+      return total + section.divisors.reduce((divTotal, divisor) => {
+        return divTotal + divisor.rows.reduce((rowTotal, row) => {
+          return rowTotal + row.tables.filter(t => t.available).length;
+        }, 0);
+      }, 0);
+    }, 0);
+  });
 }

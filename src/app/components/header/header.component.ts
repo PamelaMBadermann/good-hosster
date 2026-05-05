@@ -25,11 +25,14 @@ import { DataService } from '../../services/data.service';
 export class HeaderComponent {
   private dataService = inject(DataService);
 
+  availableCount = this.dataService.availableTablesCount;
+
   sections = this.dataService.sections;
 
   @Output() filterChange = new EventEmitter<string>();
 
   onSelectionChange(value: string) {
     this.filterChange.emit(value);
+    this.dataService.selectedSectionName.set(value);
   }
 }
